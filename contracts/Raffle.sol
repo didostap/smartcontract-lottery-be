@@ -176,4 +176,8 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
     function getRecentWinner() public view returns (address) {
         return recentWinner;
     }
+
+    function getNumPlayers() public view returns (uint256) {
+        return players.length;
+    }
 }
